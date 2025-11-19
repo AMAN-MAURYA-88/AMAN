@@ -1,0 +1,85 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 30px;
+    background-color: azure;
+}
+
+.card_body {
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 15px;
+    margin-bottom: 15Px;
+    background-color: rgb(90, 138, 190);
+}
+
+
+
+.LoginPage {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px
+}
+
+.card-img-top{
+    margin-top : 15px;
+}
+
+/*.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    position: fixed;
+    border-radius: 50%;
+    border: 15px solid #c0d291;
+    border-top-color: #79cbda;
+    animation: rotate 1s infinite;*/
+/*    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;*/
+    /*background: white;
+    z-index: 9999;
+}*/
+
+
+.bs_loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 200px;
+}
+.shader{
+    width:200px;
+    height:200px;
+    background-color:azure;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position:fixed;
+    opacity:0.5;
+    display:none;
+    z-index:9999;
+}

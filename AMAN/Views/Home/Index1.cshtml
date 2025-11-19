@@ -1,0 +1,21 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using AMAN.Areas.Identity.Data
+@using AMAN.Areas.Identity.Pages.Account;
+
+@inject SignInManager<AMANUser> SignInManager
+@inject UserManager<AMANUser> UserManager
+
+
+@if (SignInManager.IsSignedIn(User))
+{
+
+    @* await _signInManager.SignOutAsync();
+    HttpContext.Session.Clear();
+    return RedirectToAction("Login", "Account"); *@
+
+}
+else
+{
+    @* <partial name="_LoaderPartial" /> *@
+    <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login"> Login</a>
+}

@@ -12,11 +12,11 @@ function HideLoader() {
     $('#Loader').hide();
 }
 
-$('#Loader').show();
+$('#Loader').hide();
 
-//$(document).on('submit', 'form', function () {
-//    DisplayLoader();
-//})
+$(document).on('submit', 'form', function () {
+    DisplayLoader();
+})
 
 $(window).on('beforeunload', function () {
     HideLoader();
